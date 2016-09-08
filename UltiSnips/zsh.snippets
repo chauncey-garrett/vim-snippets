@@ -18,6 +18,42 @@ snippet #!env "#!/usr/bin/env (!env)" b
 ${0}
 endsnippet
 
+snippet #!new "New script template"
+#!/usr/bin/env zsh
+#
+# ${1:#description}
+#
+
+#
+# Debugging
+#
+
+# set -x
+
+#
+# Constants
+#
+
+# Directories.
+DIR_BIN="$\{0:a:h\}"
+${0}
+
+#
+# Functions
+#
+
+#
+# Main
+#
+
+main() {
+
+}
+
+main "$@"
+
+endsnippet
+
 snippet doc
 #
 # ${1:Description}
