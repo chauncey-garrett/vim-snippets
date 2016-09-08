@@ -9,9 +9,13 @@ snippet #! "shebang" b
 
 endsnippet
 
-snippet !env "#!/usr/bin/env (!env)" b
+snippet #!env "#!/usr/bin/env (!env)" b
 #!/usr/bin/env zsh
+#
+# ${1:#description}
+#
 
+${0}
 endsnippet
 
 # vim:ft=snippets:
